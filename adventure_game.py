@@ -3,11 +3,10 @@ import random
 creature = ['gorggon', 'troll', 'dragon', 'pirate']
 creature = random.choice(creature)
 
+
 def print_pause(messagestoprint):
     print(messagestoprint)
     time.sleep(2)
-    
-
     
     
 def questionare():
@@ -98,7 +97,6 @@ def cave(items):
         print_pause("You walk back out to the field.")
         questionare(items) 
                 
-
                 
 def field():
    # Things that happen to the player in the field
@@ -110,6 +108,7 @@ def field():
     print_pause("To your right is a dark cave.")
     print_pause(
         "In your hand you hold your trusty (but not very effective) dagger.")
+ 
                 
 def play_again():
     answer = input("Would you like to play again? (y/n)")
@@ -121,5 +120,6 @@ def play_again():
     else:
         print('Sorry I did not understand that!')
         play_again()
-
+                
+                
 advemture_game()
